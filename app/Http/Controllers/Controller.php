@@ -33,7 +33,7 @@ class Controller extends BaseController
         $products = Cache::store('file')->get('products');
         return view('index', [
             'persons' => $persons,
-            'products' => $products->reverse()
+            'products' => $products
         ]);
     }
 

@@ -28,7 +28,7 @@
                         <th colspan="3" scope="row" class="text-center">暂无费用信息</th>
                     </tr>
                 @else
-                @foreach($products as $product)
+                @foreach($products->reverse() as $product)
                     <tr>
                         <th scope="row">{{ $product['productId'] }}</th>
                         <td>{{ $product['productName'] }}</td>
